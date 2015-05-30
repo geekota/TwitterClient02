@@ -251,4 +251,20 @@
 }
 */
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    timeLineCell *cell = (timeLineCell *)[tableView cellForRowAtIndexPath:indexPath];//どこをクリックしたか処理
+    
+    DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    detailViewController.name = cell.nameLabel.text;
+    detailViewController.text = cell.tweetTextLabel.text;
+    detailViewController.image = cell.profileImageView.image;
+    detailViewController.identifier = self.identifier;
+    detailViewController.idStr = self.timeLineData[indexPath.row][@"id_str"];//上の５行は、データの受け渡し
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];//コードでpush
+}
+
+
+
 @end

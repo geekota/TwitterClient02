@@ -19,6 +19,7 @@
 		3E4FBFAF1B159D8E00858451 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4FBFAE1B159D8E00858451 /* Accounts.framework */; };
 		3E4FBFB21B15B55500858451 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFB11B15B55500858451 /* TimeLineTableViewController.m */; };
 		3E4FBFB51B15BB7100858451 /* timeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFB41B15BB7100858451 /* timeLineCell.m */; };
+		3E4FBFB81B1A636B00858451 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFB71B1A636B00858451 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		3E4FBFB11B15B55500858451 /* TimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewController.m; sourceTree = "<group>"; };
 		3E4FBFB31B15BB7100858451 /* timeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeLineCell.h; sourceTree = "<group>"; };
 		3E4FBFB41B15BB7100858451 /* timeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeLineCell.m; sourceTree = "<group>"; };
+		3E4FBFB61B1A636B00858451 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		3E4FBFB71B1A636B00858451 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				3E4FBFB11B15B55500858451 /* TimeLineTableViewController.m */,
 				3E4FBFB31B15BB7100858451 /* timeLineCell.h */,
 				3E4FBFB41B15BB7100858451 /* timeLineCell.m */,
+				3E4FBFB61B1A636B00858451 /* DetailViewController.h */,
+				3E4FBFB71B1A636B00858451 /* DetailViewController.m */,
 			);
 			path = TwitterClient02;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				3E4FBF8C1B159B3D00858451 /* TwitterClient02.xcdatamodeld in Sources */,
 				3E4FBF8F1B159B3D00858451 /* ViewController.m in Sources */,
 				3E4FBF861B159B3D00858451 /* main.m in Sources */,
+				3E4FBFB81B1A636B00858451 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
