@@ -20,6 +20,8 @@
 		3E4FBFB21B15B55500858451 /* TimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFB11B15B55500858451 /* TimeLineTableViewController.m */; };
 		3E4FBFB51B15BB7100858451 /* timeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFB41B15BB7100858451 /* timeLineCell.m */; };
 		3E4FBFB81B1A636B00858451 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFB71B1A636B00858451 /* DetailViewController.m */; };
+		3E4FBFBB1B1BDD1800858451 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFBA1B1BDD1800858451 /* webViewController.m */; };
+		3E4FBFBE1B1BE76300858451 /* myUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FBFBD1B1BE76300858451 /* myUIApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		3E4FBFB41B15BB7100858451 /* timeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timeLineCell.m; sourceTree = "<group>"; };
 		3E4FBFB61B1A636B00858451 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		3E4FBFB71B1A636B00858451 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		3E4FBFB91B1BDD1800858451 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = webViewController.h; path = ../webViewController.h; sourceTree = "<group>"; };
+		3E4FBFBA1B1BDD1800858451 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = webViewController.m; path = ../webViewController.m; sourceTree = "<group>"; };
+		3E4FBFBC1B1BE76300858451 /* myUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myUIApplication.h; path = ../myUIApplication.h; sourceTree = "<group>"; };
+		3E4FBFBD1B1BE76300858451 /* myUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myUIApplication.m; path = ../myUIApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				3E4FBFB41B15BB7100858451 /* timeLineCell.m */,
 				3E4FBFB61B1A636B00858451 /* DetailViewController.h */,
 				3E4FBFB71B1A636B00858451 /* DetailViewController.m */,
+				3E4FBFB91B1BDD1800858451 /* webViewController.h */,
+				3E4FBFBA1B1BDD1800858451 /* webViewController.m */,
+				3E4FBFBC1B1BE76300858451 /* myUIApplication.h */,
+				3E4FBFBD1B1BE76300858451 /* myUIApplication.m */,
 			);
 			path = TwitterClient02;
 			sourceTree = "<group>";
@@ -246,8 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4FBF891B159B3D00858451 /* AppDelegate.m in Sources */,
+				3E4FBFBE1B1BE76300858451 /* myUIApplication.m in Sources */,
 				3E4FBFB21B15B55500858451 /* TimeLineTableViewController.m in Sources */,
 				3E4FBFB51B15BB7100858451 /* timeLineCell.m in Sources */,
+				3E4FBFBB1B1BDD1800858451 /* webViewController.m in Sources */,
 				3E4FBF8C1B159B3D00858451 /* TwitterClient02.xcdatamodeld in Sources */,
 				3E4FBF8F1B159B3D00858451 /* ViewController.m in Sources */,
 				3E4FBF861B159B3D00858451 /* main.m in Sources */,
@@ -446,6 +458,7 @@
 				3E4FBFA81B159B3D00858451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E4FBFA91B159B3D00858451 /* Build configuration list for PBXNativeTarget "TwitterClient02Tests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +467,7 @@
 				3E4FBFAB1B159B3D00858451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
