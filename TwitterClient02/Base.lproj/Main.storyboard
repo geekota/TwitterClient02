@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HOME-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -16,10 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="エンジニア０２" translatesAutoresizingMaskIntoConstraints="NO" id="yVt-rS-b55">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrg-su-QM1">
-                                <rect key="frame" x="277" y="297" width="40" height="30"/>
-                                <state key="normal" title="Tweet">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="28" y="89" width="98" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Tweet!!">
+                                    <color key="titleShadowColor" red="0.87396090469819776" green="0.64904555633973227" blue="0.98277796961325969" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tweetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Typ-QK-Y1J"/>
@@ -27,7 +31,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IE-Od-c3Q">
-                                <rect key="frame" x="236" y="493" width="128" height="30"/>
+                                <rect key="frame" x="35" y="523" width="128" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Account">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,14 +40,9 @@
                                     <action selector="setAccountAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tUc-g1-Zg9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vw-9P-smR">
-                                <rect key="frame" x="180" y="448" width="241" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r2-vS-nFs">
-                                <rect key="frame" x="236" y="361" width="122" height="30"/>
+                                <rect key="frame" x="180" y="89" width="122" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="TimeLine">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -50,10 +50,16 @@
                                     <segue destination="2F3-dO-XZm" kind="push" identifier="TimeLineSegue" id="GkW-lG-l2f"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vw-9P-smR">
+                                <rect key="frame" x="69" y="455" width="241" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Hvn-8T-qwf"/>
+                    <navigationItem key="navigationItem" title="HOME" id="Hvn-8T-qwf"/>
                     <connections>
                         <outlet property="accountDisplayLabel" destination="6Vw-9P-smR" id="7ct-sm-I2A"/>
                         <outlet property="tweetActionButton" destination="Qrg-su-QM1" id="z9M-pu-xrN"/>
@@ -128,6 +134,17 @@
                                 </state>
                                 <connections>
                                     <action selector="retweetAction:" destination="zEG-db-b8s" eventType="touchUpInside" id="6be-7A-Uy2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70R-ha-pZM">
+                                <rect key="frame" x="189" y="437" width="72" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Favourites">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.19775243818218025" green="0.23285757659575002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="favouriteAction:" destination="zEG-db-b8s" eventType="touchUpInside" id="XvH-hS-syk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -213,4 +230,7 @@
             <point key="canvasLocation" x="-58" y="398"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="エンジニア０２" width="407" height="271"/>
+    </resources>
 </document>

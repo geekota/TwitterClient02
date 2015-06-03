@@ -17,6 +17,7 @@
 @property (nonatomic, copy) NSString *identifier;
 @property (nonatomic, copy) NSArray *twitterAccounts;
 
+
 @end
 
 @implementation ViewController
@@ -25,7 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.accountStore = [[ACAccountStore alloc] init];
+    
+    
+    self.accountStore = [[ACAccountStore alloc] init];//ACAccountクラスをアカウント取得のために使用。
     ACAccountType *twitterType =
     [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [self.accountStore requestAccessToAccountsWithType:twitterType
@@ -76,7 +79,7 @@
     =[SLComposeViewController
       composeViewControllerForServiceType:SLServiceTypeTwitter ];
     [self presentViewController:controller
-                       animated:YES completion:NULL];
+                       animated:YES completion:NULL];//シンプルなツイート画面の表示コード
     
 
 }
